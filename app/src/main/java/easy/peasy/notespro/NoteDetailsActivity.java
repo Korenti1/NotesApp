@@ -1,4 +1,4 @@
-package easy.tuto.notespro;
+package easy.peasy.notespro;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,7 +46,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
         titleEditText.setText(title);
         contentEditText.setText(content);
         if(isEditMode){
-            pageTitleTextView.setText("Edit your note");
+            pageTitleTextView.setText("Редактирование");
             deleteNoteTextViewBtn.setVisibility(View.VISIBLE);
         }
 
@@ -60,7 +60,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
         String noteTitle = titleEditText.getText().toString();
         String noteContent = contentEditText.getText().toString();
         if(noteTitle==null || noteTitle.isEmpty() ){
-            titleEditText.setError("Title is required");
+            titleEditText.setError("Название обязательно");
             return;
         }
         Note note = new Note();
@@ -89,7 +89,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     //note is added
-                    Utility.showToast(NoteDetailsActivity.this,"Note added successfully");
+                    Utility.showToast(NoteDetailsActivity.this,"Заметка успешно добавлена");
                     finish();
                 }else{
                     Utility.showToast(NoteDetailsActivity.this,"Failed while adding note");
@@ -107,7 +107,7 @@ public class NoteDetailsActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
                     //note is deleted
-                    Utility.showToast(NoteDetailsActivity.this,"Note deleted successfully");
+                    Utility.showToast(NoteDetailsActivity.this,"Удаление успешно");
                     finish();
                 }else{
                     Utility.showToast(NoteDetailsActivity.this,"Failed while deleting note");

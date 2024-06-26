@@ -4,10 +4,10 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
-        applicationId "easy.tuto.notespro"
+        applicationId "easy.peasy.notespro"
         minSdk 23
         targetSdk 32
         versionCode 1

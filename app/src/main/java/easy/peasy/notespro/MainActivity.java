@@ -1,4 +1,4 @@
-package easy.tuto.notespro;
+package easy.peasy.notespro;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -38,12 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
     void showMenu(){
         PopupMenu popupMenu  = new PopupMenu(MainActivity.this,menuBtn);
-        popupMenu.getMenu().add("Logout");
+        popupMenu.getMenu().add("Выход");
         popupMenu.show();
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                if(menuItem.getTitle()=="Logout"){
+                if(menuItem.getTitle()=="Выход"){
                     FirebaseAuth.getInstance().signOut();
                     startActivity(new Intent(MainActivity.this,LoginActivity.class));
                     finish();

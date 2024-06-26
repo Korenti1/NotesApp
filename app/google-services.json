@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "80052068575",
-    "project_id": "notes-pro-5772e",
-    "storage_bucket": "notes-pro-5772e.appspot.com"
+    "project_number": "772833953782",
+    "project_id": "notes-pro-a961b",
+    "storage_bucket": "notes-pro-a961b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:80052068575:android:c3a6e7675c2849048cc96a",
+        "mobilesdk_app_id": "1:772833953782:android:f08d2c19273219124e69d7",
         "android_client_info": {
-          "package_name": "easy.tuto.notespro"
+          "package_name": "easy.peasy.notespro"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "80052068575-id4ft80f6f8l2n68eh3cu4cp0sl8m8kg.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAl1ZF3QagvTW8bv-pYGPkU6ejRauk3AtM"
+          "current_key": "AIzaSyAQYn7yviY_THXeikI13IoTff0Clj-8a0U"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "80052068575-id4ft80f6f8l2n68eh3cu4cp0sl8m8kg.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

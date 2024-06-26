@@ -1,4 +1,4 @@
-package easy.tuto.notespro;
+package easy.peasy.notespro;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -69,7 +69,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                         changeInProgress(false);
                         if(task.isSuccessful()){
                             //creating acc is done
-                            Utility.showToast(CreateAccountActivity.this,"Successfully create account,Check email to verify");
+                            Utility.showToast(CreateAccountActivity.this,"Успешное создание аккаунта,Проверьте почту для верификации");
                             firebaseAuth.getCurrentUser().sendEmailVerification();
                             firebaseAuth.signOut();
                             finish();
@@ -99,15 +99,15 @@ public class CreateAccountActivity extends AppCompatActivity {
         //validate the data that are input by user.
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-            emailEditText.setError("Email is invalid");
+            emailEditText.setError("Неверный формат почты");
             return false;
         }
         if(password.length()<6){
-            passwordEditText.setError("Password length is invalid");
+            passwordEditText.setError("Неверная длина пароля");
             return false;
         }
         if(!password.equals(confirmPassword)){
-            confirmPasswordEditText.setError("Password not matched");
+            confirmPasswordEditText.setError("Пароли не совпадают");
             return false;
         }
         return true;
